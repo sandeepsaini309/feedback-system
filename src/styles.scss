@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+// @tailwind base; //! Reset styles
+@tailwind components;
+@tailwind utilities;
+
+// :host {
+//   ::ng-deep .ui-button:focus,
+//   ::ng-deep .ui-button:enabled:focus {
+//     box-shadow: none;
+//     -webkit-box-shadow: none;
+//     -moz-box-shadow: none;
+//   }
+// }
