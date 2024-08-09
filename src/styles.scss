@@ -1,17 +1,5 @@
-// @tailwind base; //! Reset styles
-@tailwind components;
-@tailwind utilities;
-
 html,
 body {
   padding: 0;
   margin: 0;
 }
-// :host {
-//   ::ng-deep .ui-button:focus,
-//   ::ng-deep .ui-button:enabled:focus {
-//     box-shadow: none;
-//     -webkit-box-shadow: none;
-//     -moz-box-shadow: none;
-//   }
-// }
