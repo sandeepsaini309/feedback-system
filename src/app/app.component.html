@@ -1,1 +1,19 @@
+<div class="container-fluid p-0">
+    <p-sidebar [(visible)]="sidebarVisible">
+        <h3>Sidebar</h3>
+        <p>hi i am sidebar </p>
+    </p-sidebar>
+    <p-menubar [model]="items" class="border-0">
+        <ng-template pTemplate="start"></ng-template>
+        <ng-template pTemplate="end">
+            <div class="d-flex align-items-center gap-2">
+                <input type="text" pInputText placeholder="Search..." />
+                <div class="">
+                    <p-menu #menu [model]="menuItems" [popup]="true" />
+                    <p-button (onClick)="menu.toggle($event)" [text]="true" icon="pi pi-ellipsis-v" />
+                </div>
+            </div>
+        </ng-template>
+    </p-menubar>
+</div>
 <router-outlet></router-outlet>
