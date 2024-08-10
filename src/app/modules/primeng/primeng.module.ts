@@ -8,6 +8,10 @@ import { SidebarModule } from 'primeng/sidebar';
 import { MenubarModule } from 'primeng/menubar';
 import { AvatarModule } from 'primeng/avatar';
 import { MenuModule } from 'primeng/menu';
+import { BadgeModule } from 'primeng/badge';
+import { ImageModule } from 'primeng/image';
+import { PanelMenuModule } from 'primeng/panelmenu';
+import { RippleModule } from 'primeng/ripple';
 
 const modules = [
   ButtonModule,
@@ -17,6 +21,10 @@ const modules = [
   MenubarModule,
   AvatarModule,
   MenuModule,
+  BadgeModule,
+  ImageModule,
+  PanelMenuModule,
+  RippleModule,
 ];
 
 @NgModule({

@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 
 import { PrimeNGConfig } from 'primeng/api';
 import { PrimengModule } from './modules/primeng/primeng.module';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, PrimengModule],
+  imports: [RouterOutlet, PrimengModule, SidebarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

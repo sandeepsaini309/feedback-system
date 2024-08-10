@@ -1,8 +1,12 @@
 <div class="container-fluid p-0">
-    <p-sidebar [(visible)]="sidebarVisible">
-        <h3>Sidebar</h3>
-        <p>hi i am sidebar </p>
+
+    <p-sidebar [(visible)]="sidebarVisible" styleClass="w-25 p-0">
+        <ng-template pTemplate="header">
+            <span class="fw-bold text-capitalize">feedback system</span>
+        </ng-template>
+        <app-sidebar></app-sidebar>
     </p-sidebar>
+
     <p-menubar [model]="items" class="border-0">
         <ng-template pTemplate="start"></ng-template>
         <ng-template pTemplate="end">
@@ -15,5 +19,6 @@
             </div>
         </ng-template>
     </p-menubar>
+
 </div>
 <router-outlet></router-outlet>

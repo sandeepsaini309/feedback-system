@@ -1,6 +1,6 @@
-@import "primeng/resources/themes/lara-light-blue/theme.css";
-@import "primeng/resources/primeng.css";
-@import "primeicons/primeicons.css";
+// @import "primeng/resources/themes/lara-light-blue/theme.css";
+// @import "primeng/resources/primeng.css";
+// @import "primeicons/primeicons.css";
 
 // @layer bootstrap-reboot, primeng;
 // @import "bootstrap/dist/css/bootstrap-reboot.css" layer(bootstrap-reboot);
@@ -13,6 +13,12 @@
       box-shadow: none;
     }
   }
+  .p-sidebar .p-sidebar-content {
+    padding: 0;
+  }
+  // p-menu {
+  //   padding: 0;
+  // }
 }
 
 html,

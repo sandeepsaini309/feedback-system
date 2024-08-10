@@ -1,0 +1,25 @@
+<!-- <p-menu [model]="items" class="w-100" />
+<div class="w-100 p-4 bg-black"></div>
+
+<ul class="d-flex flex-column text-decoration-none">
+    <li class="">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+</ul> -->
+
+<p-panelMenu [model]="items" styleClass="w-100">
+    <ng-template pTemplate="item" let-item>
+        <a pRipple class="d-flex align-items-center px-3 py-2" style="cursor: pointer;">
+            <i [class]="item.icon + ' text-primary'"></i>
+            <span class="ms-2">
+                {{ item.label }}
+            </span>
+
+            @if(item.badge){
+            <p-badge class="ms-auto" [value]="item.badge" />
+            }
+        </a>
+    </ng-template>
+</p-panelMenu>
